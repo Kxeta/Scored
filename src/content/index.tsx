@@ -129,23 +129,7 @@ export class ContentList extends Component<PROPS, STATE> {
                 
             {this.props.matchDetail.loading && <FontAwesomeIcon icon={faSpinner}/>}
             {this.state.matchIdSelected && <ModalContent match={this.props.matchDetail.list[this.state.matchIdSelected]} />}
-                
         </Modal>
-    }
-
-    renderMatch(match: GAME_CARD_ITEM) {
-        // if (this.state.openedCards.includes(match.matchId)) {
-        //     if (this.props.matchDetail.list[match.matchId]) {
-        //         const matchEvents = this.props.matchDetail.list[match.matchId].match_events
-        //         const homeTeamId = match.homeTeam.team_id
-        //         return this.renderGameCardDetails(match)
-        //     } else {
-        //         this.props.fetchingMatchDetails()
-        //         this.props.fetchMatchInfoData(match.matchId)
-        //     }
-
-        // } else 
-        return this.renderGameCard(match)
     }
 
     render() {
@@ -153,7 +137,7 @@ export class ContentList extends Component<PROPS, STATE> {
                 <div className='matches-list-wrapper'>
                     {this.props.match.loading && <FontAwesomeIcon icon={faSpinner}/>}
                     {this.state.matchesList.map((match: GAME_CARD_ITEM) => 
-                        this.renderMatch(match)
+                        this.renderGameCard(match)
                     )}
                     {this.renderModalGameDetails()}
                 </div>
