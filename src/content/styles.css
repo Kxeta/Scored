@@ -1,0 +1,29 @@
+.matches-list-wrapper {
+    width: 100%;
+    max-width: 900px;
+    margin: 24px auto;
+}
+
+.matches-list-wrapper .game-card-wrapper {
+    margin: 12px;
+}
+
+.matches-list-wrapper svg.fa-spinner, .ReactModalPortal svg.fa-spinner {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin: 0 auto;
+    display: flex;
+    align-self: center;
+    animation: rotation 1s infinite linear;
+}
+
+.ReactModal__Body--open .ReactModalPortal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-height: 100vh;
+    color: var(--primary-text);
+    background: rgba(var(--gray-rgba), 0.75);
+}

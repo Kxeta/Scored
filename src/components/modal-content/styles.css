@@ -1,0 +1,53 @@
+.game-details-modal {
+    max-width: 1000px;
+    max-height: calc(100vh - 100px);
+    margin: 0 auto;
+    padding: 24px;
+    background: var(--background-color);
+    overflow-y: auto;
+}
+
+.game-details-modal-overlay {
+    padding: 24px;
+}
+
+.game-details-modal {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 24px;
+    background: var(--background-color);
+}
+
+.game-details-modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 12px;
+}
+
+.team-header {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+}
+
+.game-result-header {
+    flex: 1;
+    align-items: center;
+}
+
+.team-header-logo {
+    height: auto;
+    width: 75px;
+    margin: 0 auto;
+}
+
+h2.full-time-result {
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+p.half-time-result {
+    text-align: center;
+}

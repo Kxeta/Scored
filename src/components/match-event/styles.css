@@ -1,0 +1,56 @@
+.match-event-wrapper {
+    padding: 6px 12px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.match-event-wrapper:not(:last-of-type) {
+    border-bottom: 1px solid;
+    border-color: var(--background-alt-color);
+}
+
+.match-event-wrapper p {
+    margin: 0;
+}
+
+.match-event-time, .match-event-description {
+    display: flex;
+    align-items: center;
+}
+
+.match-event-description {
+    flex: 1;
+}
+
+.match-event-description p {
+    margin: 0 6px;
+    font-weight: bold;
+}
+
+.match-event-description p span {
+    font-weight: normal;
+    margin: 0 6px;
+}
+
+.match-event-description.event-home {
+    flex-direction: row-reverse;
+    flex: 2;
+}
+
+.match-event-description.event-result {
+    justify-content: center;
+}
+
+.match-event-description.event-away {
+    flex-direction: row;
+    flex: 2;
+}
+
+.yellow-card {
+    color: var(--yellow);
+}
+
+.red-card {
+    color: var(--red);
+}

@@ -1,0 +1,68 @@
+.game-card-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 6px 12px;
+    border: 2px solid;
+    border-radius: 6px;
+    background: var(--gray)
+}
+
+.game-card-wrapper p {
+    margin: 0;
+}
+
+.game-card-status, .game-card-details {
+    flex: 1;
+}
+
+.game-card-teams, .game-card-result {
+    flex: 2;
+}
+
+.game-card-team {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.game-card-team img {
+    height: auto;
+    width: 25px;
+    margin-right: 3px;
+}
+
+.game-card-team:first-of-type, .game-card-result p:first-of-type {
+    margin-bottom: 12px;
+}
+
+.game-card-team p {
+    margin: 0;
+}
+
+.game-card-result p {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.game-card-result p span {
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+.game-card-details-content {
+    display: flex;
+    align-items: center;
+}
+
+.game-card-details-content:first-of-type {
+    margin-bottom: 6px;
+}
+
+.game-card-details-content svg {
+    margin-right: 6px;
+}
+
+.game-card-details {
+    font-size: 0.7rem;
+}

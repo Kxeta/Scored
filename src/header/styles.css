@@ -1,0 +1,73 @@
+h1.filter-title {
+    margin-top: 0;
+    text-align: center;
+    padding-top: 12px;
+    color: var(--primary-color);
+}
+
+.switch-theme {
+    position: fixed;
+    top: 6px;
+    right: 6px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(var(--gray-rgba), 0.8);
+    border-radius: 3px;
+}
+
+
+.filter-wrapper {
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.filter-wrapper .filter {
+    flex: 2;
+    margin-right: 12px;
+    display: flex;
+}
+
+.filter-wrapper .filter .dropdown-wrapper {
+    flex: 1
+}
+
+.filter-wrapper .filter svg.fa-spinner {
+    align-self: center;
+    display: flex;
+    color: var(--primary-color);
+    animation: rotation 2s infinite linear;
+}
+
+.button-wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-wrapper button {
+    background: var(--primary-color);
+    color: var(--primary-alt-text);
+    border: none;
+    padding: 6px;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    display: flex;
+    flex: 0.5;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.button-wrapper button[disabled] {
+    background: var(--gray);
+    color: var(--primary-text);
+    cursor: not-allowed;
+
+}
